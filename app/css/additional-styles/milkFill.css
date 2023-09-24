@@ -24,13 +24,33 @@ button {
   background-position: 0 -100%;
   transition: 1.5s ease;
   filter: brightness(0) invert(1);
+  animation: milkFlow 4.5s ease alternate infinite;
 }
 button:hover {
   background-position: 500% 100%;
   color: #000;
+  animation: milkFlowHover 4.5s ease;
 }
 
 button:active {
   background-position: 500% 100%;
   color: #000;
+}
+
+@keyframes milkFlow {
+  0% {
+    background-position: -100% -100%;
+  }
+  100% {
+    background-position: 1000% -105%;
+  }
+}
+
+@keyframes milkFlowHover {
+    0% {
+        background-position: 0% -100%;
+    }
+    100% {
+        background-position: 500% 100%;
+    }   
 }
