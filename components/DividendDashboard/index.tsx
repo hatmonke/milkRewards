@@ -1,6 +1,5 @@
 import React from "react";
 import DividendUserPanel from "./DividendUserPanel";
-import DividendDistributorPanel from "./DividendDistributorPanel";
 import GradientSpan from "../GradientSpan";
 import { ProjectName } from "@/utils/config";
 
